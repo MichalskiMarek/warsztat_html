@@ -6,11 +6,214 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,900&amp;subset=latin-ext"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-logo">
+                <a href="/" class="page-logo-link">
+                    Sit <span>on</span> chair
+                </a>
+            </h1>
+            <nav class="page_nav">
+                <ul class="page-nav-list">
+                    <li><a href="">O firmie</a>
+                        <ul class="page-nav-sublist">
+                            <li><a href="">Aktualności</a></li>
+                            <li><a href="">Nasz team</a></li>
+                            <li><a href="">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">galeria</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <div class="main-slider-bg">
+        <div class="container">
+            <div class="banner">
+                <button class="banner-prev" onclick="changeSlide()">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </button>
+                <button class="banner-next" onclick="changeSlide()">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+                <div class="banner-slides">
+                    <div id="slide1" class="banner-slide-1 active">
+                        <div class="slide-img"></div>
+                        <div class="slide-text">
+                            <h2 class="slide-text-title">Sit <span>on</span> our <span>chair</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at aut consectetur deserunt dolorem doloremque ducimus ea fuga in itaque laboriosam, laborum maiores maxime minima nam natus numquam officiis perferendis quidem reiciendis.</p>
+                            <button class="btn">Zobacz więcej</button>
+                        </div>
+                    </div>
+                    <div id="slide2" class="banner-slide-2">
+                            <div class="slide-img"></div>
+                            <div class="slide-text">
+                                <h2 class="slide-text-title">Sit <span>on</span> our <span>chair</span></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, debitis dignissimos distinctio ea eaque error minima molestiae nulla omnis optio ratione repellendus sapiente voluptates? Autem harum incidunt quam soluta tenetur?</p>
+                                <button class="btn">Zobacz więcej</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="main-articles-list">
+        <div class="container">
+            <h2 class="visuallyhidden">Artykuły</h2>
+            <div class="row">
+                <div class="col-1-3">
+                    <article class="main-article"><a href="" class="main-article-link">
+                        <img src="images/box1_img.jpg" alt="">
+                        <div class="main-article-bar">
+                            <h3 class="main-article-title">
+                                Chair CLAIR
+                            </h3>
+                        </div>
+                    </a>
+                    </article>
+                </div>
+                <div class="col-1-3">
+                    <article class="main-article"><a href="" class="main-article-link">
+                        <img src="images/box2_img.jpg" alt="">
+                        <div class="main-article-bar">
+                            <h3 class="main-article-title">
+                                Chair MARGARITA
+                            </h3>
+                        </div>
+                    </a>
+                    </article>
+                </div>
+                <div class="col-1-3">
+                    <article class="main-article">
+                        <div class="main-article-text">
+                            <h3 class="main-article-title">
+                                Finds all inputs
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, doloribus excepturi
+                                minus nobis obcaecati perspiciatis rem similique tempore unde voluptate.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-price-list">
+        <div class="container">
+            <h2 class="section-title">
+                Cennik
+            </h2>
+
+            <div class="row">
+                <div class="col-1-3">
+                    <div class="plan-left">
+                        <h3 class="plan-title">
+                            Basic plan
+                        </h3>
+                        <div class="plan-price"><span>85</span> <span>99</span> <span>PLN/MSC</span></div>
+                        <div class="plan-option1">Zakup towaru + dowóz</div>
+                        <div class="plan-option2">Serwis</div>
+                        <button class="btn plan-btn">Dołącz</button>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="plan-middle">
+                        <h3 class="plan-title">
+                            Standard plan
+                        </h3>
+                        <div class="plan-price"><span>95</span> <span>99</span> <span>PLN/MSC</span></div>
+                        <div class="plan-option1">Zakup towaru + dowóz</div>
+                        <div class="plan-option2">Serwis</div>
+                        <div class="plan-option3">Gwarancja 5 lat</div>
+                        <button class="btn plan-btn">Dołącz</button>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="plan-right">
+                        <h3 class="plan-title">
+                            Advance plan
+                        </h3>
+                        <div class="plan-price"><span>211</span> <span>00</span> <span>PLN/MSC</span></div>
+                        <div class="plan-option1">Zakup towaru + dowóz</div>
+                        <div class="plan-option2">Serwis</div>
+                        <div class="plan-option3">Gwarancja 6 lat</div>
+                        <div class="plan-option4">Porady projektanta</div>
+                        <button class="btn plan-btn">Dołącz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-contact">
+        <div class="container">
+            <h2 class="section-title">
+                Kontakt
+            </h2>
+            <form action="" class="form">
+                <div class="form-left">
+
+                    <div class="form-row">
+                        <label for="name" class="visuallyhidden">Imie</label>
+                        <input type="text" id="name" name="name" placeholder="Imię">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email" class="visuallyhidden">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="E-mail">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="msg" class="visuallyhidden">Wiadomość</label>
+                        <textarea type="text" id="msg" name="msg" placeholder="Wiadomość"></textarea>
+                    </div>
+
+                </div>
+                <div class="form-right">
+                    <div class="form-img"></div>
+                    <div class="form-row">
+                        <label class="form-checkbox">
+                            <input type="checkbox" required>
+                            <span></span>
+                            Zagadzam się na przetwarzanie danych osobowych
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="btn form-submit">
+                            Wyślij
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="main-footer-copy">
+                Copyright 2018 | All Rights Reserved. - Sit On Chair
+            </div>
+            <div class="main-footer-links">
+                <ul class="main-footer-links-list">
+                    <li class="flickr"><a href=""></a></li>
+                    <li class="vimeo"><a href=""></a></li>
+                    <li class="pinterest"><a href=""></a></li>
+                    <li class="tweeter"><a href=""></a></li>
+                    <li class="main-footer-logo"><a href="">sit <span>on</span> chair</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/slider.js"></script>
 </body>
 </html>
